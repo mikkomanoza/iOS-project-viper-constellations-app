@@ -12,6 +12,10 @@
 		847FED401D538C1700A4FED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847FED3E1D538C1700A4FED2 /* Main.storyboard */; };
 		847FED421D538C1700A4FED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847FED411D538C1700A4FED2 /* Assets.xcassets */; };
 		847FED451D538C1700A4FED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847FED431D538C1700A4FED2 /* LaunchScreen.storyboard */; };
+		847FED531D538CE800A4FED2 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 847FED511D538CE800A4FED2 /* Montserrat-Bold.otf */; };
+		847FED541D538CE800A4FED2 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 847FED521D538CE800A4FED2 /* Montserrat-Light.otf */; };
+		847FED561D53A15F00A4FED2 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FED551D53A15F00A4FED2 /* DetailVC.swift */; };
+		847FED581D53A6E100A4FED2 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 847FED571D53A6E100A4FED2 /* Montserrat-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		847FED411D538C1700A4FED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847FED441D538C1700A4FED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847FED461D538C1700A4FED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847FED511D538CE800A4FED2 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		847FED521D538CE800A4FED2 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		847FED551D53A15F00A4FED2 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		847FED571D53A6E100A4FED2 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		847FED391D538C1700A4FED2 /* iOS-project-viper-constellations-app */ = {
 			isa = PBXGroup;
 			children = (
+				847FED501D538C4500A4FED2 /* Resources */,
+				847FED4F1D538C3D00A4FED2 /* Util */,
+				847FED4E1D538C3500A4FED2 /* Model */,
+				847FED4D1D538C2C00A4FED2 /* View */,
+				847FED4C1D538C2000A4FED2 /* Controller */,
 				847FED3A1D538C1700A4FED2 /* AppDelegate.swift */,
-				847FED3C1D538C1700A4FED2 /* ViewController.swift */,
 				847FED3E1D538C1700A4FED2 /* Main.storyboard */,
 				847FED411D538C1700A4FED2 /* Assets.xcassets */,
 				847FED431D538C1700A4FED2 /* LaunchScreen.storyboard */,
 				847FED461D538C1700A4FED2 /* Info.plist */,
 			);
 			path = "iOS-project-viper-constellations-app";
+			sourceTree = "<group>";
+		};
+		847FED4C1D538C2000A4FED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				847FED3C1D538C1700A4FED2 /* ViewController.swift */,
+				847FED551D53A15F00A4FED2 /* DetailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		847FED4D1D538C2C00A4FED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		847FED4E1D538C3500A4FED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		847FED4F1D538C3D00A4FED2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		847FED501D538C4500A4FED2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				847FED511D538CE800A4FED2 /* Montserrat-Bold.otf */,
+				847FED521D538CE800A4FED2 /* Montserrat-Light.otf */,
+				847FED571D53A6E100A4FED2 /* Montserrat-Regular.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847FED541D538CE800A4FED2 /* Montserrat-Light.otf in Resources */,
 				847FED451D538C1700A4FED2 /* LaunchScreen.storyboard in Resources */,
 				847FED421D538C1700A4FED2 /* Assets.xcassets in Resources */,
 				847FED401D538C1700A4FED2 /* Main.storyboard in Resources */,
+				847FED531D538CE800A4FED2 /* Montserrat-Bold.otf in Resources */,
+				847FED581D53A6E100A4FED2 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +192,7 @@
 			files = (
 				847FED3D1D538C1700A4FED2 /* ViewController.swift in Sources */,
 				847FED3B1D538C1700A4FED2 /* AppDelegate.swift in Sources */,
+				847FED561D53A15F00A4FED2 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
